@@ -28,6 +28,8 @@ const Testimonials = () => {
                 width='45'
                 height='45'
                 objectFit='cover'
+                placeholder='blur'
+                blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNsrQcAAY8BBhuFt1sAAAAASUVORK5CYII='
               />
               <div className={styles.info}>
                 <span className={styles.username}>{user.name}</span>
