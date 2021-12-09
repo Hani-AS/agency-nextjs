@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Intro from '../components/Intro';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         <title>Agency</title>
         <meta name='description' content='Agency website' />
       </Head>
-      This is homepage
+      <Intro />
     </div>
   );
 }
