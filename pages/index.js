@@ -5,7 +5,6 @@ import { data } from '../data';
 import styles from '../styles/Home.module.scss';
 
 export default function Home({ services }) {
-  console.log(services);
   return (
     <div>
       <Head>
