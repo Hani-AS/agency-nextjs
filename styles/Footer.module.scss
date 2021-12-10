@@ -1,0 +1,42 @@
+.container {
+  height: 15.625rem;
+  border-top: 0.1875rem solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.125rem;
+  padding: 3.125rem;
+
+  .title {
+    font-weight: 400;
+    color: white;
+    background-color: green;
+    padding: 0.3125rem;
+    width: max-content;
+  }
+
+  .linkTitle {
+    text-decoration: underline;
+
+    a,
+    .link {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      margin-right: 1.25rem;
+    }
+  }
+
+  .cardL {
+    flex: 2;
+  }
+  .cardS {
+    flex: 1;
+  }
+
+  .cardItem {
+    margin-bottom: 1.25rem;
+  }
+}
