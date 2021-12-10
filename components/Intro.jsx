@@ -25,6 +25,7 @@ const Intro = () => {
           objectFit='cover'
           layout='fill'
           priority
+          sizes='50vw'
         />
       </div>
     </div>

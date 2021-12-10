@@ -24,6 +24,7 @@ const Services = ({ services }) => {
                     width='100%'
                     height='100%'
                     layout='responsive'
+                    sizes='50vw'
                     objectFit='cover'
                     placeholder='blur'
                     blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNsrQcAAY8BBhuFt1sAAAAASUVORK5CYII='
