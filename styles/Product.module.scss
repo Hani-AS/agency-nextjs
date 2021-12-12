@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  padding: 3.125rem;
+
+  .cardL {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+  }
+
+  .cardS {
+    flex: 1;
+  }
+
+  .imgContainer {
+    width: 30%;
+    margin: 0.3125rem;
+    &:nth-child(3) {
+      border-top-right-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  .title {
+    font-size: 3.75rem;
+  }
+
+  button {
+    padding: 0.9375rem;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 0.625rem;
+    margin-top: 3.125rem;
+    cursor: pointer;
+  }
+}
