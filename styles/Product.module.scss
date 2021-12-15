@@ -36,3 +36,40 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 20px;
+    .title {
+      font-size: 50px;
+    }
+    .imgContainer {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+    }
+    .cardS {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      button {
+        margin: 20px 0px;
+      }
+    }
+
+    .cardL {
+      justify-content: center;
+    }
+    .cardL::before {
+      content: 'Projects';
+      font-size: 50px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}

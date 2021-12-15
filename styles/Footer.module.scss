@@ -40,3 +40,19 @@
     margin-bottom: 1.25rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .title,
+  .linkTitle {
+    font-size: 30px;
+  }
+
+  .cardItem {
+    text-align: center;
+  }
+}
