@@ -5,7 +5,6 @@ import { data } from '../../data';
 import styles from '../../styles/Product.module.scss';
 
 const product = ({ product }) => {
-  console.log(product.images);
   return (
     <div className={styles.container}>
       <div className={styles.cardL}>
