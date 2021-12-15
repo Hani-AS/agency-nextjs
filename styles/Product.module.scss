@@ -15,6 +15,7 @@
   .imgContainer {
     width: 30%;
     margin: 0.3125rem;
+    position: relative;
     &:nth-child(3) {
       border-top-right-radius: 50%;
       overflow: hidden;
@@ -49,7 +50,6 @@
       height: 300px;
       border-radius: 50%;
       overflow: hidden;
-      position: relative;
     }
     .cardS {
       display: flex;

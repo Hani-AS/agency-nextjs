@@ -53,3 +53,17 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    h1 {
+      margin-top: 5rem;
+    }
+    .form {
+      width: 100%;
+      .inputS:first-child {
+        margin: 0;
+      }
+    }
+  }
+}
