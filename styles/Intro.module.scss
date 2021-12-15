@@ -39,3 +39,26 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    .circle1 {
+      right: -50vh;
+      bottom: -50vh;
+    }
+    .card {
+      padding: 3.125rem;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 1.875rem;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      display: none;
+    }
+  }
+}
