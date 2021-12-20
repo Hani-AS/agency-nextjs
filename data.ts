@@ -1,4 +1,18 @@
-export const data = [
+export type Product = {
+  id: number;
+  name: string;
+  title: string;
+  desc: string;
+  video?: string;
+  photo: string;
+  longDesc: string;
+  images: {
+    id: number;
+    url: string;
+  }[];
+}[];
+
+export const data: Product = [
   {
     id: 1,
     name: 'design',

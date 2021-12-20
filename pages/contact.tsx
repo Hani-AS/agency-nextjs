@@ -2,6 +2,10 @@ import React from 'react';
 import Circle from '../components/Circle';
 import styles from '../styles/Contact.module.scss';
 
+type Input = {
+  type: React.HTMLInputTypeAttribute | HTMLTextAreaElement;
+};
+
 const contact = () => {
   return (
     <div className={styles.container}>
@@ -34,7 +38,7 @@ const contact = () => {
           placeholder='Subject'
         />
         <textarea
-          type='text'
+          // type='text'
           required
           className={styles.textarea}
           placeholder='Message'

@@ -3,8 +3,25 @@ import Link from 'next/link';
 import React from 'react';
 import { data } from '../../data';
 import styles from '../../styles/Product.module.scss';
+import { GetStaticProps, GetStaticPaths } from 'next';
 
-const product = ({ product }) => {
+export type Product = {
+  product: {
+    id: number;
+    name: string;
+    title: string;
+    desc: string;
+    video?: string;
+    photo: string;
+    longDesc: string;
+    images: {
+      id: number;
+      url: string;
+    }[];
+  };
+};
+
+const product = ({ product }: Product) => {
   return (
     <div className={styles.container}>
       <div className={styles.cardL}>
@@ -27,7 +44,7 @@ const product = ({ product }) => {
 
 export default product;
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const products = data;
   const paths = products.map((item) => {
     return {
@@ -43,7 +60,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const { name } = context.params;
   const product = data.filter((item) => item.name === name)[0];
   return {

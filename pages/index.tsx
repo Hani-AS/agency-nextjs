@@ -1,8 +1,9 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Intro from '../components/Intro';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
-import { data } from '../data';
+import { data, Product } from '../data';
 
 export default function Home({ services }) {
   return (
@@ -18,7 +19,7 @@ export default function Home({ services }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const services = data;
   return {
     props: { services },
