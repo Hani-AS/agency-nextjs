@@ -3,27 +3,29 @@ import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Services.module.scss';
 
-type Service = {
-  id: number;
-  name: string;
-  title: string;
-  desc: string;
-  video?: string;
-  photo: string;
-  longDesc: string;
-  images: {
+export type ServicesProps = {
+  services: {
     id: number;
-    url: string;
+    name: string;
+    title: string;
+    desc: string;
+    video?: string;
+    photo: string;
+    longDesc: string;
+    images: {
+      id: number;
+      url: string;
+    }[];
   }[];
 };
 
-const Services = ({ services }) => {
+const Services = ({ services }: ServicesProps) => {
   return (
     <div className={styles.container}>
       <h1>What We Can Do?</h1>
       <h2>Services we can help you with</h2>
       <div className={styles.services}>
-        {services.map((service: Service) => (
+        {services.map((service) => (
           <Link passHref key={service.id} href={`/products/${service.name}`}>
             <div className={styles.service}>
               <div className={styles.desc}>{service.desc}</div>
